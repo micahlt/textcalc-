@@ -7,3 +7,4 @@ puts "2nd Number"
 scnd= gets.to_i
 puts "Calculating..."
 puts frst + scnd
+puts "Thank you for using the calc.  To export this result to HTML, type /export, to stop type /stop"
