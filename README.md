@@ -1,2 +1,4 @@
 # textcalc-
-Text calculator using JavaScript
+Text calculator
+
+a simple text-based calculator using Ruby
