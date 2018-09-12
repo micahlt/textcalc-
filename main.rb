@@ -1,4 +1,4 @@
-# Welcome message
+# # Welcome message
 puts "Hello!  Welcome to TextCalc 0.6"
 # Define calculator function
 def runcalc
@@ -47,4 +47,4 @@ if strp=="/stop" then puts "Stopped."
 elsif strp == "/again" then runcalc
 end
 end
-runcalc # Starts the program.
+runcalc
