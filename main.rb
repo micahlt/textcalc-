@@ -13,7 +13,7 @@ puts "2nd Number"
 scnd= gets.to_i
 puts "Calculating..."
 puts frst + scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator"
+puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
 elsif opor == "subtract"
 # Subtracting
 puts "1st Number"
@@ -22,7 +22,7 @@ puts "2nd Number"
 scnd= gets.to_i
 puts "Calculating..."
 puts frst - scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator"
+puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
 elsif opor == "multiply"
 # Multiplying
 puts "1st Number"
