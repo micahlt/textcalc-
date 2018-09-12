@@ -29,7 +29,7 @@ puts "Thank you for using the calc.  Type /stop to end the calculator or /again 
 end
 strp= gets.chomp
 if strp=="/stop" then puts "Stopped." 
-elsif strp = "/again" then runcalc
+elsif strp == "/again" then runcalc
 end
 end
 runcalc
