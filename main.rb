@@ -25,7 +25,7 @@ puts "2nd Number"
 scnd= gets.to_i
 puts "Calculating..."
 puts frst * scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator"
+puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
 end
 strp= gets.chomp
 if strp=="/stop" then puts "Stopped." 
