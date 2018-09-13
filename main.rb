@@ -1,66 +1,34 @@
-# # Welcome message
-puts "Hello!  Welcome to TextCalc 0.7"
-# Define calculator function
-def runcalc
-# Ask for operator
-puts "Add, subtract, divide, multiply, or grow exponentially?"
-opor= gets.chomp
-if opor == "add" then 
-# Adding
-puts "1st Number"
-frst= gets.to_i
-puts "2nd Number"
-scnd= gets.to_i
-puts "Calculating..."
-puts frst + scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
-elsif opor == "subtract"
-# Subtracting
-puts "1st Number"
-frst= gets.to_i
-puts "2nd Number"
-scnd= gets.to_i
-puts "Calculating..."
-puts frst - scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
-elsif opor == "multiply"
-# Multiplying
-puts "1st Number"
-frst= gets.to_i
-puts "2nd Number"
-scnd= gets.to_i
-puts "Calculating..."
-puts frst * scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
-elsif opor == "divide"
-# Dividing
-puts "1st Number"
-frst= gets.to_i
-puts "2nd Number"
-scnd= gets.to_i
-puts "Calculating..."
-puts frst / scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
-  elsif opor == "grow" or "grow exponentially"
-# Exponents
-puts "Starting Number"
-frst= gets.to_i
-puts "Number to multiply by"
-scnd= gets.to_i
-puts "Calculating..."
-puts frst ** scnd
-puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
-  elsif opor == "convert" or opor == "convert decimals to fractions"
-# Conversion to fraction
-puts "Decimal"
-frst= gets.to_i
-puts "Calculating..."
-puts frst "over 1" 
-puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
-end # Ends the if block
-strp= gets.chomp
-if strp=="/stop" then puts "Stopped." 
-elsif strp == "/again" then runcalc
+# Welcome
+puts "TextCalc 0.8.2"
+def runit
+puts "Enter expression"
+prob = gets
+prob = prob.split
+if prob[1] == "*" then
+  puts prob[0].to_i * prob[2].to_i
+    if gets.chomp == "again" then
+      runit
+    else puts "Done." end
+  elsif prob[1] == "/" then
+  puts prob[0].to_i / prob[2].to_i
+    if gets.chomp == "again" then
+      runit
+    else puts "Done." end
+  elsif prob[1] == "+" then
+  puts prob[0].to_i + prob[2].to_i
+    if gets.chomp == "again"
+      runit
+    else puts "Done." end
+  elsif prob[1] == "-" then
+  puts prob[0].to_i - prob[2].to_i
+    if gets.chomp == "again"
+      runit
+    else puts "Done." end
+  elsif prob[1] == "ex" then
+  puts prob[0].to_i ** prob[2].to_i
+    if gets.chomp == "again" then
+      runit
+    else puts "Done." end
 end
 end
-runcalc
+runit
