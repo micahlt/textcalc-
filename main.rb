@@ -54,7 +54,6 @@ end # Ends the if block
 strp= gets.chomp
 if strp=="/stop" then puts "Stopped." 
 elsif strp == "/again" then runcalc
-elsif strp == "/error" then when 1 == 1 do puts "ERROR" end
 end
 end
 runcalc
