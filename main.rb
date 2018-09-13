@@ -50,6 +50,13 @@ scnd= gets.to_i
 puts "Calculating..."
 puts frst ** scnd
 puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
+  elsif opor == "convert" or opor == "convert decimals to fractions"
+# Conversion to fraction
+puts "Decimal"
+frst= gets.to_i
+puts "Calculating..."
+puts frst "over 1" 
+puts "Thank you for using the calc.  Type /stop to end the calculator or /again to run it again."
 end # Ends the if block
 strp= gets.chomp
 if strp=="/stop" then puts "Stopped." 
