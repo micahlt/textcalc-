@@ -1,8 +1,6 @@
 # Welcome
-#0.9.3 Tart Disastrous Vendor
-# HTML Creator built by user3927287 on Stack Overflow
-var11 = "string"
-puts "TextCalc 0.9.3"
+#0.9.4 Tart Disastrous Vendor
+puts "TextCalc 0.9.4"
 def runit
 puts "Enter expression or type help"
 prob = gets
@@ -41,7 +39,7 @@ if prob[1] == "*" then
     puts "use operators /, *, +, -, % for modulo (remainder of a division problem), and ex (for exponential growth)"
     runit
   elsif prob[0].downcase == "info" then
-    puts "TextCalc 0.9.3"
+    puts "TextCalc 0.9.4"
     puts "build name Tart Disastrous Vendor"
     puts "Running Ruby version " + RUBY_VERSION
     runit
