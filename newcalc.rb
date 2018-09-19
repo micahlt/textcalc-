@@ -1,34 +1,7 @@
 # Welcome
-puts "TextCalC Light 0.71, forked from @micahlt"
-def runit
-puts "Enter expression"
-prob = gets
-prob = prob.split
-if prob[1] == "*" then
-  puts prob[0].to_i * prob[2].to_i
-    if gets.chomp == "again" then
-      runit
-    else puts "Done." end
-  elsif prob[1] == "/" then
-  puts prob[0].to_i / prob[2].to_i
-    if gets.chomp == "again" then
-      runit
-    else puts "Done." end
-  elsif prob[1] == "+" then
-  puts prob[0].to_i + prob[2].to_i
-    if gets.chomp == "again"
-      runit
-    else puts "Done." end
-  elsif prob[1] == "-" then
-  puts prob[0].to_i - prob[2].to_i
-    if gets.chomp == "again"
-      runit
-    else puts "Done." end
-  elsif prob[1] == "ex" then
-  puts prob[0].to_i ** prob[2].to_i
-    if gets.chomp == "again" then
-      runit
-    else puts "Done." end
-end
-end
-runit
+puts "This version of TextCalc was forked, but then merged.";
+sleep(0.7);
+puts "Please use the main.rb file to run the calc."
+sleep(0.7);
+puts "Thanks,"
+puts "Micah Lindley"
