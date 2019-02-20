@@ -1,6 +1,6 @@
-# Welcome
-# 1.9.4 ELD (Epic Laughing Desktop)
-puts 'TextCalc ELD 1.9.4'
+# Welcome!
+#2.0.1 Infinate Evil Backpack
+puts 'TextCalc IEB 2.0.1'
 sleep(1)
 def runit
   puts 'Enter expression or type help'
@@ -8,24 +8,17 @@ def runit
   prob = prob.split
   if prob[1] == '*'
     puts prob[0].to_i * prob[2].to_i
-    if gets.chomp.casecmp('again').zero?
-      runit
-    else puts 'Done.' end
+    runit
   elsif prob[1] == '/'
     puts prob[0].to_i / prob[2].to_i
-    if gets.chomp.casecmp('again').zero?
-      runit
-    else puts 'Done.' end
+    runit
   elsif prob[1] == '+'
     puts prob[0].to_i + prob[2].to_i
     if gets.chomp.casecmp('again').zero?
       runit
     else puts 'Done.' end
   elsif prob[1] == '-'
-    puts prob[0].to_i - prob[2].to_i
-    if gets.chomp.casecmp('again').zero?
-      runit
-    else puts 'Done.' end
+  runit
   elsif prob[1] == 'ex'
     puts prob[0].to_i**prob[2].to_i
     if gets.chomp.casecmp('again').zero?
@@ -45,17 +38,17 @@ def runit
     end
     runit
   elsif prob[0].casecmp('info').zero?
-    puts 'TextCalc 1.9.4'
-    puts 'build name Epic Laughing Desktop'
+    puts 'TextCalc 2.0.1'
+    puts 'build name Infinate Evil Backpack'
     puts 'Running Ruby version ' + RUBY_VERSION
     runit
   elsif prob[0].casecmp('nextversion').zero?
-    puts 'Version 2.0.1'
-    puts 'Infinite Evil Backpack'
+    puts 'Version 2.1.1'
+    puts 'Powerful Bananna Lady'
     runit
   else puts 'Error- Invalid input'
        sleep(0.5)
-       puts 'Please retype answer.'
+       puts 'Please restart program.'
        sleep(0.5)
 
   end
