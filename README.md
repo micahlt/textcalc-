@@ -2,6 +2,7 @@
 a simple text-based calculator using Ruby
 
 <img src = "https://img.shields.io/static/v1.svg?label=stable&message=true&color=ready">
+
 [![Run on Repl.it](https://repl.it/badge/github/micahlt/textcalc-)](https://repl.it/github/micahlt/textcalc-)
 
 Find out more info on the project in the [Wiki](https://github.com/micahlt/textcalc-/wiki) or by running the questions.rb Ruby program in the repo.
